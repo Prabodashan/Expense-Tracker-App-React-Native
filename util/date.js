@@ -3,3 +3,7 @@ export function getFormattedDate(date) {
     -2
   )} - ${("0" + date.getDate()).slice(-2)}`;
 }
+
+export function getDateMinusDays(date, days) {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate() - days);
+}
